@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>College Website</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f5f5f5;
+}
+
+
+.topbar {
+    background: #081c3d;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    font-size: 14px;
+}
+
+
+header {
+    background: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+}
+
+.logo {
+    width: 90px;
+    height: 90px;
+    background: #ddd;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    overflow: hidden;
+}
+
+.title {
+    text-align: center;
+}
+
+.title h1 {
+    color: #ff6600;
+    font-size: 32px;
+}
+
+.title h4 {
+    color: #444;
+}
+
+.contact {
+    background: #2c81d4;
+    color: white;
+    padding: 18px;
+    border-radius: 10px;
+    font-size: 20px;
+    text-align: center;
+}
+
+
+nav {
+    background: #1668c1;
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 15px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: yellow;
+}
+
+
+.banner {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 25px;
+    background: white;
+}
+
+.banner-img{
+    width: 1880px;
+    height: 550px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+
+
+.welcome {
+    background: white;
+    margin: 30px;
+    padding: 40px;
+    text-align: center;
+}
+
+.welcome h1 {
+    font-size: 45px;
+    color: #222;
+    margin-bottom: 15px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin: 30px;
+}
+
+.card {
+    height: 180px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0,0,0,.1);
+    transition: .3s;
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0,0,0,.2);
+}
+
+
+.card-news {
+    background: #e74c3c;
+    color: white;
+}
+
+.card-events {
+    background: #2ecc71;
+    color: white;
+}
+
+.card-notices {
+    background: #f1c40f;
+    color: #222;
+}
+
+.card-depts {
+    background: #9b59b6;
+    color: white;
+}
+
+.card-placements {
+    background: #3498db;
+    color: white;
+}
+
+.card-recruiters {
+    background: #34495e;
+    color: white;
+}
+
+.card-gallery {
+    background: #1abc9c;
+    color: white;
+}
+
+.card-achievements {
+    background: #e67e22;
+    color: white;
+}
+
+.card-contact {
+    background: #27ae60;
+    color: white;
+}
+
+
+footer {
+    background: #081c3d;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    margin-top: 30px;
+}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+    <span>College Code : ANIL</span>
+    <span>Email : principal@college.edu</span>
+    <span>Admissions : 8712005999</span>
+    <span>IIC</span>
+    <span>E-Learning</span>
+</div>
+
+<header>
+    <div class="logo">
+        <img src="anits.png" alt="ANITS Logo" style="width: 90px; height: auto;">
+    </div>
+    <div class="title">
+        <h1>ANIL NEERUKONDA INSTITUTE OF TECHNOLOGY & SCIENCES</h1>
+        <h4>(AUTONOMOUS)</h4>
+    </div>
+    <div class="contact">
+        Admissions Contact<br><br>9014490144 
+    </div>
+</header>
+
+<nav>
+    <a href="#">About Us</a>
+    <a href="#">Admissions</a>
+    <a href="#">Academics</a>
+    <a href="#">Departments</a>
+    <a href="#">R & D</a>
+    <a href="#">IQAC</a>
+    <a href="#">Library</a>
+    <a href="#">Training</a>
+    <a href="#">Placements</a>
+    <a href="#">Facilities</a>
+</nav>
+
+
+<section class="banner">
+    <div>
+        <img src= "place.jpg" alt="ANITS BANNER" class="banner-img">
+    </div>
+</section>
+
+<video src="anitsvideo.mp4" width="900" height="500" align="center"></video>
+          
+<section class="welcome">
+    <h1>Anits at a Glance</h1>
+   
+</section>
+<div class="container">
+    <div class="card card-news">Latest News</div>
+    <div class="card card-events">Events</div>
+    <div class="card card-notices">Notices</div>
+    <div class="card card-depts">Departments</div>
+    <div class="card card-placements">Placements</div>
+    <div class="card card-recruiters">Recruiters</div>
+    <div class="card card-gallery">Gallery</div>
+    <div class="card card-achievements">Achievements</div>
+    <div class="card card-contact">Contact Us</div>
+</div>
+<footer>
+    © 2026 ANITS | All Rights Reserved
+</footer>
+
+</body>
+</html> 
